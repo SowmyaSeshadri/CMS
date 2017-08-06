@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Hustle-Courier Services</title>
+<link rel="stylesheet" href="location.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+      <div class="center">
+        <div class="row">
+          <h1 class="nameOfwebApp"><span>Hustle</span></h1>
+          <p class="subtext">Fast and Efficient <span>Domestic Courier Services.</span></p>
+        </div>
+        <h4 class="loc">We work at </h4>
+        <div class="locationBox" id="locBox">
+
+          <!-- <div class="box"></div>
+          <div class="box"></div>
+
+
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div> -->
+        </div>
+      </div>
+  </div>
+</body>
+<script>
+$(document).ready(function () {
+
+    var locationList = "";
+    var url ='https://api.airtable.com/v0/appFF6m3Z4hMUNq2q/Location?&view=Grid%20view&api_key=keyKOPe6gpndWefVv'
+      $.get(url, function( data ) {
+     $.each(data.records,function(index,value){
+     console.log(value.fields.Address)
+     $("#locBox").append("<div class='box'><p>" +value.fields.Address+"</p></br><p>Contact:" +value.fields.PhoneNumber+"</p></br><p>Timings:" +value.fields.Timings+"</p></br></div>")
+               .fadeIn(200)
+             })
+           })
+});
+</script>
+</html>

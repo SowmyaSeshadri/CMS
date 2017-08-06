@@ -1,0 +1,23 @@
+@import "index.scss";
+.container-fluid{
+  background-color: $dark-blue;
+}
+.center{
+  width:70%;
+  height:100%;
+  display: inline-block;
+  background-color:$light-blue;
+}
+.form-control {
+    display: block;
+    width: 80%;
+}
+.form-horizontal{
+  margin-top: 30px;
+  font-family: 'Muli', sans-serif;
+}
+.btn-default{
+  background-color: $dark-blue;
+  text-align: left;
+  border-color: black;
+}

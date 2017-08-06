@@ -1,0 +1,207 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+.container-fluid {
+  text-align: center;
+  height: 100%;
+  background-color: #42A5F5;
+  font-family: 'Muli', sans-serif; }
+
+.top {
+  margin: 0;
+  display: inline-block;
+  height: 12%;
+  border-radius: 5px;
+  width: 75%; }
+  @media screen and (max-width: 500px) {
+    .top {
+      height: 10%; } }
+
+.nameOfwebApp span {
+  color: #0277BD;
+  font-size: 45px; }
+
+.mid {
+  width: 60%;
+  height: 80%;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: #E3F2FD; }
+  @media screen and (max-width: 500px) {
+    .mid {
+      width: 80%;
+      margin-bottom: 10%; } }
+  @media screen and (max-width: 799px) {
+    .mid {
+      width: 80%;
+      margin-bottom: 10%; } }
+
+.list {
+  list-style-type: none;
+  background-color: #42A5F5;
+  max-width: 300px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 20px; }
+  @media screen and (max-width: 500px) {
+    .list {
+      max-width: 200px;
+      margin-top: 0px; } }
+  .list li {
+    padding: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #d3d3d3; }
+    .list li .light {
+      color: #E3F2FD; }
+      .list li .light:hover {
+        color: #0277BD; }
+    @media screen and (min-width: 300px) and (max-width: 500px) {
+      .list li {
+        padding: 5px;
+        margin-top: 10px; } }
+  .list a {
+    color: black;
+    text-decoration: none; }
+  .list a:hover {
+    color: #E3F2FD;
+    text-decoration: none; }
+
+.subtext {
+  font-size: 18px;
+  color: #0277BD;
+  font-size: 23px; }
+  @media screen and (max-width: 500px) {
+    .subtext {
+      padding-left: 10px;
+      font-size: 16px;
+      padding-right: 10px; } }
+
+.aboutUs {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold; }
+  .aboutUs span {
+    color: #0277BD; }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .aboutUs {
+      font-size: 12px; } }
+  @media screen and (min-width: 500px) and (max-width: 800px) {
+    .aboutUs {
+      font-size: 18px; } }
+
+.glyphicon {
+  margin-left: 10px; }
+  @media screen and (max-width: 500px) {
+    .glyphicon {
+      margin-left: 0px; } }
+
+.panel-default .panel-heading {
+  color: #333;
+  background-color: #A8CEEF;
+  border-color: #4176A5; }
+
+.panel-body {
+  background-color: #E3F2FD; }
+
+.form-control {
+  display: block;
+  width: 80%; }
+
+.btn-default {
+  background-color: #42A5F5;
+  text-align: left;
+  border-color: black; }
+
+.form-horizontal {
+  margin-top: 30px;
+  font-family: 'Muli', sans-serif; }
+
+.container-fluid {
+  background-color: #42A5F5;
+  height: 100%; }
+
+.center {
+  width: 70%;
+  height: 80%;
+  border-radius: 10px;
+  margin-top: 5%;
+  display: inline-block;
+  background-color: #E3F2FD; }
+  @media screen and (max-width: 500px) {
+    .center {
+      width: 70%;
+      height: 90%; } }
+
+.box {
+  width: 230px;
+  vertical-align: top;
+  background-color: #42A5F5;
+  display: inline-block;
+  margin-bottom: 2px;
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 5px; }
+  @media screen and (max-width: 500px) {
+    .box {
+      width: 200px;
+      height: 80px; } }
+
+.box p {
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+  line-height: 1.2rem; }
+
+.loc {
+  display: block;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold; }
+
+.prev {
+  width: 100%;
+  min-height: 300px;
+  overflow-y: cursor;
+  margin-top: 20px;
+  text-align: left;
+  color: #0277BD;
+  font-family: 'Muli', sans-serif; }
+  .prev h4 {
+    margin-left: 40px;
+    text-decoration: underline; }
+  .prev p {
+    margin-left: 45px;
+    font-size: 16px; }
+
+.side {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 10px; }
+  .side button {
+    margin-top: 20px;
+    border-color: #42A5F5;
+    background-color: #42A5F5; }
+    .side button:hover {
+      background-color: #E3F2FD;
+      color: #42A5F5; }
+    .side button a {
+      text-decoration: none;
+      color: #42A5F5; }
+      .side button a:hover {
+        color: #42A5F5; }
+
+.adminFun {
+  margin-top: 30px; }
+  .adminFun button {
+    background-color: #42A5F5; }
+
+.bottom {
+  margin-top: 50px; }
+  .bottom button {
+    background-color: #42A5F5; }

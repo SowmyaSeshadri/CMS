@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Hustle-Courier Services</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="index.css" type="text/css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="top"></div>
+    <div class="mid">
+    <div class="row">
+      <h1 class="nameOfwebApp"><span>Hustle</span></h1>
+      <p class="subtext">Fast and Efficient <span>Domestic Courier Services.</span></p>
+    </div>
+    <form class="form-horizontal" id="form" action="admin.html">
+  <div class="form-group">
+  <label class="control-label col-sm-2" for="uname">UserName:</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" name="uname" id="uname" placeholder="Enter UserName" required>
+  </div>
+  </div>
+  <div class="form-group">
+  <label class="control-label col-sm-2" for="psw">Password:</label>
+  <div class="col-sm-10">
+  <input type="password" class="form-control" name="psw" id="psw" placeholder="Enter Password" required>
+  </div>
+  </div>
+  <div class="form-group">
+  <div class="col-sm-offset-1 col-sm-10">
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  </div>
+  </div>
+  <div class="form-group">
+  <div class="col-sm-offset-1 col-sm-10">
+  <button type="submit" class="btn btn-default" href="admin.html">Submit</button>
+  </div>
+  </div>
+  </form>
+    </div>
+      <div class="bottom"></div>
+  </div>
+</body>
+<script>
+
+$(document).ready(function(){
+  // Object is created
+  $.fn.serializeObject = function() {
+   var o = {};
+   var a = this.serializeArray();
+   $.each(a, function() {
+       if (o[this.name] !== undefined) {
+           if (!o[this.name].push) {
+               o[this.name] = [o[this.name]];
+           }
+           o[this.name].push(this.value || '');
+       } else {
+           o[this.name] = this.value || '';
+       }
+   });
+   return o;
+  };
+  $("#form").submit(function(event){
+    var dataa = $("#form");
+    console.log(dataa)
+    event.preventDefault();
+    var formData = $("#form").serializeObject();
+    var requestData = {
+      fields : formData
+    }
+
+
+  $.ajax({
+    url: 'https://api.airtable.com/v0/appFF6m3Z4hMUNq2q/SignIn?api_key=keyKOPe6gpndWefVv',
+    type: "POST",
+    data: JSON.stringify(requestData),
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+     success: function(res) {
+    console.log("added")
+        }
+
+        })
+      })
+})
+</script>
+</html>

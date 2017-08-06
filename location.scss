@@ -1,0 +1,101 @@
+@import "index.scss";
+.container-fluid{
+  background-color: $dark-blue;
+  height:100%;
+}
+.center{
+  width:70%;
+  height:80%;
+  border-radius: 10px;
+  margin-top: 5%;
+  display: inline-block;
+  background-color:$light-blue;
+  @media screen and (max-width: 500px){
+    width: 70%;
+    height:90%;
+  }
+}
+.box{
+  width:230px;
+  vertical-align: top;
+  background-color: $dark-blue;
+  display: inline-block;
+  margin-bottom: 2px;
+  text-align: left;
+  font-family:'Muli', sans-serif;
+  margin-left: 5px;
+  padding:5px;
+  border-radius: 5px;
+  // .locIconBox{
+  //   width:100px;
+  //   height:100px;
+  //   border:1px solid #d3d3d3;
+  //   background-color: $light-blue;
+  // }
+  @media screen and (max-width: 500px){
+    width: 200px;
+    height:80px;
+  }
+}
+.box p{
+  padding: 0px;
+  margin:0px 0px 0px 10px;
+  line-height: 1.2rem;
+}
+.loc{
+  display: block;
+  font-family:'Muli', sans-serif;
+  font-weight: bold;
+}
+.prev{
+  width:100%;
+  min-height:300px;
+  overflow-y:cursor;
+  margin-top: 20px;
+  text-align: left;
+  color:$blue-text;
+  font-family: 'Muli', sans-serif;
+  h4{
+    margin-left: 40px;
+    text-decoration: underline;
+  }
+  p{
+    margin-left: 45px;
+    font-size: 16px;
+  }
+}
+.side{
+  width:100%;
+  min-height: 300px;
+  margin-top: 10px;
+button{
+  margin-top: 20px;
+    border-color:$dark-blue;
+  background-color: $dark-blue;
+  &:hover{
+    background-color: $light-blue;
+    color:$dark-blue;
+
+  }
+  a{
+    text-decoration: none;
+    color:$dark-blue;
+
+    &:hover{
+      color: $dark-blue;
+    }
+  }
+}
+}
+.adminFun{
+  margin-top: 30px;
+  button{
+    background-color: $dark-blue;
+  }
+}
+.bottom{
+  margin-top: 50px;
+  button{
+  background-color: $dark-blue;
+}
+}
